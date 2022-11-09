@@ -21,7 +21,7 @@ export default class ArcText {
 
   constructor(elm: HTMLElement, splitter: any = undefined) {
     this.element = elm
-    this.originalHTML = this.element.innerHTML
+    this.originalHTML = this.element.innerHTML ? this.element.innerHTML : this.element
 
     const container = document.createElement('div')
     const fragment = document.createDocumentFragment()
